@@ -1,0 +1,13 @@
+#! /bin/bash
+
+gnome-terminal -x sh -c 'roscore; exec bash'
+
+sleep 5;
+
+gnome-terminal -x sh -c 'ROS_NAMESPACE=camera_1/raspicam_node rosrun image_proc image_proc; exec bash'
+
+gnome-terminal -x sh -c 'ROS_NAMESPACE=camera_2/raspicam_node rosrun image_proc image_proc; exec bash'
+
+gnome-terminal -x sh -c 'source devel/setup.bash; roslaunch apriltags2_ros continuous_detection.launch; exec bash'
+
+gnome-terminal -x sh -c './camera; exec bash'
