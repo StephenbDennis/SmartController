@@ -26,9 +26,9 @@ For my system I used the following IP addresses
 
 **Laptop:** 192.168.1.130
 
-**Camera 1:**
+**Camera 1:** 192.168.1.110
 
-**Camera 2:**
+**Camera 2:** 192.168.1.111
 
 ```cd ~/catkin_ws/src```
 
@@ -46,6 +46,8 @@ This file by default did not need to be changed if detecting tags from the 36h11
 
 This file needs to have a list of the Id's of the tags that will be detected. By default no tags are included.
 
+If multiple cameras are being used I had issues with both instances of the apriltag code using the tags.yaml I resolved this by using two files, one for each camera. These files are found in the repo.
+
 The family of tag you will be searching for is set up in the config/settings.yaml file. By default it is set to search for tags in the 
 36h11 family.
 
@@ -58,6 +60,17 @@ then run
 ```catkin_make```
 
 **Camera**
+
+**Setting up the OS**
+http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
+
+The IP addresses that I used for this tuorial were:
+
+**Laptop:** 192.168.1.130
+
+**Camera 1:** 192.168.1.110
+
+**Camera 2:** 192.168.1.111
 
 ```cd ~/catkin_ws/src```
 
@@ -102,13 +115,11 @@ I was also able to further reduce this problem by connected both of the cameras 
 
 Replace raspicam_node.cpp in /home/pi/catkin_ws/src/raspicam_node/src with raspicam_node.cpp
 
-After replacing the file the node muct be rebuilt.
+After replacing the file the node must be rebuilt.
 
 ```cd ~/catkin_ws```
 
 ```catkin_make```
-
-
 
 
 ## Cofiguring system
