@@ -164,7 +164,7 @@ To start the software run the following code:
       
       **Camera 2:** ```ifconfig eth0 192.168.1.111```
 
-2). Verify that the nodes in catkin have been configured and run catkin_make
+2). From the master computer verify that the nodes in catkin have been configured and run catkin_make
 
 3). Run script to bring up detection nodes ```cd ~/catkin && ./setup``` (This script will launch several terminals)
 
