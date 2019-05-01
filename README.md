@@ -181,7 +181,7 @@ To start the software run the following code:
 
 9). The last node to start is the guide node. This is done with ```rosrun setup_tf tf_guide```
 
-10). The robot should start driving at this point.
+10). The robot will start driving to the selected point.
       
 
 
