@@ -166,9 +166,9 @@ To start the software run the following code:
  
 1). Configure the ethernet port for each camera (This is usully done over wifi)
 
-      **Camera 1:** ```ifconfig eth0 192.168.1.110```
+**Camera 1:** ```ifconfig eth0 192.168.1.110```
       
-      **Camera 2:** ```ifconfig eth0 192.168.1.111```
+**Camera 2:** ```ifconfig eth0 192.168.1.111```
 
 2). From the master computer verify that the nodes in catkin have been configured and run catkin_make
 
