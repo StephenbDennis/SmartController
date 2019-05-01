@@ -20,14 +20,16 @@ Both cameras and the master computer were conected together with a network route
 
 Apriltags must also be placed in the cameras field of view. At least one known tag must be in the system, and at least one tag needs to be visible from both cameras.  
 
+Tags can be printed from [this](https://github.com/StephenbDennis/SmartController/blob/master/apriltags1-20.pdf)  .pdf file
+
 ## Software Setup
 
 **Master Computer**
 
 **Setting up the OS**
-http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
 
-Follow this tutorial from 6.1 to the end
+
+Follow this [this](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#install-ros-on-remote-pc) tutorial from 6.1 to the end.
 
 For my system I used the following IP addresses
 
