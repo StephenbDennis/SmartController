@@ -159,16 +159,28 @@ Once the software has been set up on the raspberry pi's, the master computer, an
 To start the software run the following code:
  
 1). Configure the ethernet port for each camera (This is usully done over wifi)
+
       **Camera 1:** ```ifconfig eth0 192.168.1.110```
+      
       **Camera 2:** ```ifconfig eth0 192.168.1.111```
+
 2). Verify that the nodes in catkin have been configured and run catkin_make
+
 3). Run script to bring up detection nodes ```cd ~/catkin && ./setup``` (This script will launch several terminals)
-4). Two of the terminals that launched are ssh-ing into the cameras. Log into each one and run the launch script ```(cd ~/ && ./setup)```
+
+4). Two of the terminals that launched are ssh-ing into the cameras. Log into each one and run the launch script ```(cd ~/ && 
+./setup)```
+
 5). Open 3 terminals to run the transform node, that pathfinding node, and the guide node.
+
 6). The transform node must be started first with: ```rosrun setup_tf tf_listener```
+
 7). The pathfinding node is then launched, this is done with:  ```rosrun setup_tf pathfinder```
+
 8). This node accepts a point from the user and if a path is possible it then starts broadcasting waypoints.
+
 9). The last node to start is the guide node. This is done with ```rosrun setup_tf tf_guide```
+
 10). The robot should start driving at this point.
       
 
