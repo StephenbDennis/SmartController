@@ -52,7 +52,7 @@ The family of tag you will be searching for is set up in the config/settings.yam
 36h11 family.
 
 Examples of how these files need to be set up can be found at:
-[wiki.ros.org/apriltags2_ros/Tutorials](wiki.ros.org/apriltags2_ros/Tutorials) 
+[wiki.ros.org/apriltags2_ros/Tutorials](http://wiki.ros.org/apriltags2_ros/Tutorials) 
 
 
 then run
