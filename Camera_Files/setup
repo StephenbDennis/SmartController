@@ -1,0 +1,5 @@
+#! /bin/bash
+
+roslaunch raspicam_node camerav2_640x480_10fps.launch
+
+
