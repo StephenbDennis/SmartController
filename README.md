@@ -52,7 +52,7 @@ The family of tag you will be searching for is set up in the config/settings.yam
 36h11 family.
 
 Examples of how these files need to be set up can be found at:
-wiki.ros.org/apriltags2_ros/Tutorials
+[wiki.ros.org/apriltags2_ros/Tutorials](wiki.ros.org/apriltags2_ros/Tutorials) 
 
 
 then run
@@ -102,18 +102,21 @@ run
 
 ```rospack profile.```
 
+
+
 copy camera_info folder from /home/pi/catkin_ws/src/raspicam_node/camera_info to /home/pi/.ros/camera_info
 
-copy camerav2_640x480_7fps.launch and camerav2_640x480_20fps.launch
+copy [camerav2_640x480_7fps.launch](http://www.google.com)  and [camerav2_640x480_20fps.launch](http://www.google.com) 
 
 into /home/pi/catkin_ws/src/raspicam_node/launch
 
-copy camerav2_640x480.yaml into /home/pi/.ros/camera_info and ~/catkin_ws/src/raspicam_node/camera_info
+copy [camerav2_640x480.yaml](http://www.google.com)  into /home/pi/.ros/camera_info and ~/catkin_ws/src/raspicam_node/camera_info
 
 When I ran this code I had synchronization issues on the apriltag side. The modified file below fixed some of those issues.
 I was also able to further reduce this problem by connected both of the cameras and the laptop to a router with ethernet cables. It appears that this might be a bandwidth issue.
 
-Replace raspicam_node.cpp in /home/pi/catkin_ws/src/raspicam_node/src with raspicam_node.cpp
+Replace raspicam_node.cpp in /home/pi/catkin_ws/src/raspicam_node/src with
+* [raspicam_node.cpp](http://www.google.com)  
 
 After replacing the file the node must be rebuilt.
 
