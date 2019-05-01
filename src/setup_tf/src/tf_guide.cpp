@@ -20,17 +20,17 @@ struct dof6 {
 	double roll;
 };
 
+string IP="hi";
+int wayNum =5;
+
 double PI = atan(1) * 4;
 
 ///***Conf***
-double dist_buffer = .08;
-double ang_buffer = .2;
-int wayNum =5;
-string s_for ="http://192.168.1.126/_for";
-string s_CCW ="http://192.168.1.126/_l";
-string s_CW ="http://192.168.1.126/_r";
-string IP="hi";
-
+double dist_buffer = .08; //size of waypoint size
+double ang_buffer = .2; //dictates how tight turning is controlled
+string s_for ="http://192.168.1.126/_for"; //forward command
+string s_CCW ="http://192.168.1.126/_l";   //left turn command
+string s_CW ="http://192.168.1.126/_r";    //right turn command
 ///***END Conf***
 
 bool done = false;
