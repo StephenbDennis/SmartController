@@ -1,5 +1,9 @@
 # Smart Controller
-This page contains information to set up the the smart controller system. This project was created as a capstone project for the USU Computer Engineering program. This project was done by Stephen Dennis.  
+This page contains information to set up the the smart controller system. This project was created as a capstone project for the USU Computer Engineering program. This project was done by Stephen Dennis. 
+
+
+![alt text](https://github.com/StephenbDennis/SmartController/blob/master/Overview_updated.PNG)
+
 
 ## Physical Setup
 This setup used the following hardware
@@ -171,7 +175,7 @@ To start the software run the following code:
 4). Two of the terminals that launched are ssh-ing into the cameras. Log into each one and run the launch script ```(cd ~/ && 
 ./setup)```
 
-5). Open 3 terminals to run the transform node, that pathfinding node, and the guide node.
+5). Open 3 terminals to run the transform node, the pathfinding node, and the guide node.
 
 6). The transform node must be started first with: ```rosrun setup_tf tf_listener```
 
