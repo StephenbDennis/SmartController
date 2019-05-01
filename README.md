@@ -139,21 +139,21 @@ After replacing the file the node must be rebuilt.
 
 The * [setup](https://github.com/StephenbDennis/SmartController/blob/master/Camera_Files/setup) script also needs to be added to the ~/ directory to help simplify launching the software.
 
-**Robot: **
-The software for the robot is very simple. The nodeMCU board creates a simple webserver with a web page that allows the system to be controlled by any device on the network. This software is loaded onto the board using the arduino IDE. The network settings must be modified on this file before it is loaded. 
+**Robot:**
+The software for the robot is very simple. The nodeMCU board creates a simple webserver with a web page that allows the system to be controlled by any device on the network. This software is loaded onto the board using the arduino IDE. The network settings must be modified on this file before it is loaded. This file can be found * [here](https://github.com/StephenbDennis/SmartController/blob/master/nodeMCU/embedded_web_server.ino).
 
 ## Configuring system
 This repo contains some additional nodes that were created to calculate the nessesary transforms, calculate paths, and control the robot.
 
 Each of these files has settings that can be modified to adjust the performance of the system. The configrable portions are towards the top of each file and are marked with comments. 
 
-The tf_listener.cpp file contains settings to adjust which tags are detected, and how each tag is interpreted. This file also allows the user to specify how many cameras are in the system. These adjustment are located on lines 50-64.  XXX
+The tf_listener.cpp file contains settings to adjust which tags are detected, and how each tag is interpreted. This file also allows the user to specify how many cameras are in the system. These adjustment are located on lines 50-64.
 
 
-The pathfinder.cpp file contains the code to calculate the path that the robot will take. This file allows the user to adjust the size of the obstacles, the size of the waypoints, and the max area that the robot is allowed to travel in. These settings can be modified on lines XXX of this file.
+The pathfinder.cpp file contains the code to calculate the path that the robot will take. This file allows the user to adjust the size of the obstacles, the size of the waypoints, and the max area that the robot is allowed to travel in. These settings can be modified on lines 30-36 of this file.
 
 
-The tf_guide.cpp file contains the code that will send commands to the robot. This file contains settings that allow the user to adjust how strinct the controls are, and the address to where the commands are sent. These settings are found on lines XXX of this file. With the system I noticed that the robot often changed ip addresses. This file is where what address would be modified.
+The tf_guide.cpp file contains the code that will send commands to the robot. This file contains settings that allow the user to adjust how strinct the controls are, and the address to where the commands are sent. These settings are found on lines 28-34 of this file. With the system I noticed that the robot often changed ip addresses. This file is where what address would be modified.
 
 Because these settings are in the .cpp files after any changes the nodes must be rebuilt. This is done by running the catkin_make command from the catkin directory.
 
