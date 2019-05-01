@@ -14,7 +14,7 @@ This setup used the following hardware
 
 Both cameras and the master computer were conected together with a network router and ethernet cables. The master computer connected to the robot through the router with wifi. 
 
-Apriltags must also be placed in the cameras field of veiw. At least one known tag must be in the system, and at least one tag needs to be visible from both cameras.  
+Apriltags must also be placed in the cameras field of view. At least one known tag must be in the system, and at least one tag needs to be visible from both cameras.  
 
 ## Software Setup
 
