@@ -1,5 +1,5 @@
 # Smart Controller
-This page contains information to set up the the smart controller system. This project was created as a capstone project for the USU Computer Engineering program. This project was done by Stephen Dennis. 
+This page contains the setup information for the smart controller system. This project was created as a capstone project for the USU Computer Engineering program 2018-2019. 
 
 
 ![alt text](https://github.com/StephenbDennis/SmartController/blob/master/Overview_updated.PNG)
