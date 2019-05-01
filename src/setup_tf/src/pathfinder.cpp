@@ -24,15 +24,15 @@ int main(int argc, char** argv){
   ros::Rate r(30);
 
   double obs_rad[2];
-  obs_rad[0]=.25;
-  obs_rad[1]=.25;
-
+  
+  int wayNum = 5;
   
     //***Config****
-    int wayNum = 5;
-    double buf =.1;
-    double yMax =2;
-    double xMax =10;
+    obs_rad[0]=.25; //radius of the first obstacle
+    obs_rad[1]=.25; //radius of the second obstacle
+    double buf =.1; //radius of robot
+    double yMax =2; //max boundry Y
+    double xMax =10; //max bountry X
     //***END***
     
     point pos[5];
