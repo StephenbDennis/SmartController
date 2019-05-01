@@ -113,17 +113,17 @@ run
 
 copy camera_info folder from /home/pi/catkin_ws/src/raspicam_node/camera_info to /home/pi/.ros/camera_info
 
-copy [camerav2_640x480_7fps.launch](http://www.google.com)  and [camerav2_640x480_20fps.launch](http://www.google.com) 
+copy [camerav2_640x480_10fps.launch](https://github.com/StephenbDennis/SmartController/blob/master/Camera_Files/camerav2_640x480_10fps.launch) into /home/pi/catkin_ws/src/raspicam_node/launch
 
-into /home/pi/catkin_ws/src/raspicam_node/launch
+copy [camerav2_640x480.yaml](https://github.com/StephenbDennis/SmartController/blob/master/Camera_Files/camerav2_640x480.yaml)  into /home/pi/.ros/camera_info and ~/catkin_ws/src/raspicam_node/camera_info
 
-copy [camerav2_640x480.yaml](http://www.google.com)  into /home/pi/.ros/camera_info and ~/catkin_ws/src/raspicam_node/camera_info
+This file contains a discription of the distortion of the camera. Using this file might not give the best results, and I recommend generating one specific to your camera by following the tutorial at * [http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration](http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration) 
 
 When I ran this code I had synchronization issues on the apriltag side. The modified file below fixed some of those issues.
 I was also able to further reduce this problem by connected both of the cameras and the laptop to a router with ethernet cables. It appears that this might be a bandwidth issue.
 
 Replace raspicam_node.cpp in /home/pi/catkin_ws/src/raspicam_node/src with
-* [raspicam_node.cpp](http://www.google.com)  
+* [raspicam_node.cpp](https://github.com/StephenbDennis/SmartController/blob/master/Camera_Files/raspicam_node.cpp)  
 
 After replacing the file the node must be rebuilt.
 
@@ -131,12 +131,12 @@ After replacing the file the node must be rebuilt.
 
 ```catkin_make```
 
-The * [XXX](http://www.google.com) script also needs to be added to the ~/ directory to help simplify launching the software.
+The * [setup](https://github.com/StephenbDennis/SmartController/blob/master/Camera_Files/setup) script also needs to be added to the ~/ directory to help simplify launching the software.
 
-**Robot**
+**Robot: **
 The software for the robot is very simple. The nodeMCU board creates a simple webserver with a web page that allows the system to be controlled by any device on the network. This software is loaded onto the board using the arduino IDE. The network settings must be modified on this file before it is loaded. 
 
-## Cofiguring system
+## Configuring system
 This repo contains some additional nodes that were created to calculate the nessesary transforms, calculate paths, and control the robot.
 
 Each of these files has settings that can be modified to adjust the performance of the system. The configrable portions are towards the top of each file and are marked with comments. 
